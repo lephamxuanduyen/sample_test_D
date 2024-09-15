@@ -143,3 +143,8 @@ li.item-nav:hover a, .item-nav.active a {
 footer {
     background-color: var(--light-grey);
 }
+
+footer a {
+    text-decoration: none;
+    color: #000;
+}
