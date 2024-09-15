@@ -31,7 +31,7 @@ header {
     display: inline-block;
 }
 
-header.navbar, #middle-section, #lasted-works, .testi_clients {
+header.navbar, #middle-section, #lasted-works, .testi_clients, footer {
     padding-left: 200px;
     padding-right: 200px;
 }
@@ -138,4 +138,8 @@ li.item-nav:hover a, .item-nav.active a {
     color: #000;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+footer {
+    background-color: var(--light-grey);
 }
