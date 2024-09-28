@@ -249,6 +249,7 @@ footer .col.nav p, footer p{
 header.navbar, #middle-section, #lasted-works, .testi_clients, footer {
     padding-left: 200px;
     padding-right: 200px;
+    margin: 0;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -291,7 +292,7 @@ header.navbar, #middle-section, #lasted-works, .testi_clients, footer {
 }
 
 @media only screen and (max-width: 720px) {
-    footer .col.about, footer .col.nav, footer .col.connect {
+    footer .col.about, footer .col.nav, footer .col.connect, #clients, #testimonials {
         width: 100%;
     }
 
@@ -314,6 +315,14 @@ header.navbar, #middle-section, #lasted-works, .testi_clients, footer {
     header #menu-btn {
         display: block;
         font-size: 30px;
+    }
+
+    footer > div {
+        flex-direction: column;
+    }
+
+    .testi_clients {
+        flex-direction: column;
     }
 
 }
