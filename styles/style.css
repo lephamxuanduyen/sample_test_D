@@ -6,7 +6,12 @@
     --light-blue: #81e4ed;
     --light-blue-300: #e8fcfe;
     --blue-border: #81e4ed;
-    --bg-download-btn: linear-gradient(0deg, #29abc7 0%, #29abc7 0%, #5fcddd 15%, #71d9e5 50%, #81e3ed 100%)
+    --bg-download-btn: linear-gradient(0deg, #29abc7 0%, #29abc7 0%, #5fcddd 15%, #71d9e5 50%, #81e3ed 100%);
+    --font-sm: 13px;
+    --font-m: 14px;
+    --fort-l: 15px;
+    --index-header: 10;
+    --index-menu: 20;
 }
 
 * {
@@ -16,11 +21,24 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+#content {
+    top: 120px;
+    position: absolute;
+}
+
 header {
     height: 120px;
+    width: 100%;
     background-color: var(--light-grey);
     box-shadow: drop-shadow(0px 2px 2.5px rgba(0,0,0,0.07));
     border: 1px solid rgba(0,0,0,0.15);
+    z-index: var(--index-header);
+    top: 0;
+}
+
+header #menu-btn {
+    display: none;
+    cursor: pointer;
 }
 
 .navigation {
@@ -31,26 +49,47 @@ header {
     display: inline-block;
 }
 
-header.navbar, #middle-section, #lasted-works, .testi_clients, footer {
-    padding-left: 200px;
-    padding-right: 200px;
-}
 
 .item-nav a {
     text-decoration: none;
     color: #000;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: var(--font-sm);
 }
 
 li.item-nav:hover a, .item-nav.active a {
     color: var(--text-primary-color);
 }
 
+#menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: var(--index-menu);
+    background-color: var(--light-grey);
+    height: 100%;
+    width: 50%;
+    list-style: none;
+    padding: 30px;
+}
+
+#menu li {
+    margin-bottom: 10px;
+}
+
+#menu.hide {
+    transform: translateX(100%);
+}
+
+#menu #exit-btn {
+    font-size: 30px;
+    text-align: right;
+}
+
 #header-img {
-    height: 500px;
+    height: auto;
     background-color: var(--light-blue);
-    /* padding-top: 20px; */
     position: relative;
 }
 
@@ -71,7 +110,7 @@ li.item-nav:hover a, .item-nav.active a {
 }
 
 #header-img .carousel-inner {
-    height: 440px;
+    height: 40vw;
 }
 
 #header-img .carousel-inner img {
@@ -83,11 +122,24 @@ li.item-nav:hover a, .item-nav.active a {
     width: 100%;
     background-color: var(--light-grey);
     padding-top: 72px;
+    padding-bottom: 50px;
+    margin: 0;
 }
 
 #middle-section .card img {
     width: 40px;
     height: 40px;
+}
+
+#middle-section .card {
+    height: 100%;
+}
+
+#middle-section .card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 30px;
 }
 
 .card .card-title span{
@@ -99,11 +151,27 @@ li.item-nav:hover a, .item-nav.active a {
 
 .card-body a {
     color: var(--text-primary-color);
+    font-size: var(--font-sm);
+}
+
+.card-top .card-title{
+    font-size: var(--fort-l);
+}
+
+.card-top .card-text{
+    flex: 1;
+    margin-top: auto;
+    font-size: var(--font-sm);
+}
+
+.card .card-bottom {
+    margin-top: auto;
 }
 
 .title-section {
     font-weight: bold;
     text-transform: uppercase;
+    font-size: var(--fort-l);
 }
 
 #lasted-works .card img {
@@ -147,4 +215,103 @@ footer {
 footer a {
     text-decoration: none;
     color: #000;
+}
+
+footer .col.about, footer .col.browser, footer .col.explore {
+    width: 30%;
+}
+
+footer .col.nav {
+    width: 50%;
+}
+
+footer .col.connect {
+    width: 20%;
+}
+
+footer .col.contact {
+    width: 40%;
+}
+
+footer .col.nav .row {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+footer .col.nav p, footer p{
+    margin-bottom: 3px;
+    font-size: var(--font-sm);
+}
+
+header.navbar, #middle-section, #lasted-works, .testi_clients, footer {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+@media only screen and (max-width: 1440px) {
+    header.navbar, #middle-section, #lasted-works, .testi_clients, footer {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #header-img .carousel {
+        width: 100%;
+        padding: 20px 10% 0 10%;
+    }
+
+    #bottom-box {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media only screen and ((min-width: 719px) and (max-width: 1439px)) {
+    footer .col.about {
+        width: 50%;
+        order: 1;
+    }
+
+    footer .col.nav {
+        order: 3;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    footer .col.connect {
+        width: 50%;
+        order: 2;
+    }
+
+    footer .col.contact, footer .col.browser, footer .col.explore {
+        width: 33%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    footer .col.about, footer .col.nav, footer .col.connect {
+        width: 100%;
+    }
+
+    footer .col.nav {
+        margin: 2rem 0;
+    }
+
+    footer .col.connect {
+        margin-bottom: 2rem;
+    }
+
+    footer .logo {
+        margin-top: 1rem;
+    }
+
+    header .navigation {
+        display: none;
+    }
+
+    header #menu-btn {
+        display: block;
+        font-size: 30px;
+    }
+
 }

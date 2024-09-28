@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="/vendor//bootstrap/css/bootstrap.css" />
     </head>
     <body>
-        <header class="navbar">
+        <header class="navbar position-fixed">
             <div class="logo">
                 <a href="#">
                     <img src="/image/logo/BisLite.png" alt="bislite" />
@@ -24,7 +24,22 @@
                 <li class="item-nav px-3 py-2"><a href="#">BLOG</a></li>
                 <li class="item-nav px-3 py-2"><a href="#">CONTACT</a></li>
             </ul>
+
+            <div id="menu-btn"><i class="fa-solid fa-bars"></i></div>
         </header>
+
+        <div id="menu" class="hide">
+            <div id="exit-btn"><i class="fa-solid fa-xmark"></i></div>
+            <ul class="navigation align-items-sm-center m-sm-0 p-0">
+                <li class="item-nav px-3 py-2 active"><a href="#">HOME</a></li>
+                <li class="item-nav px-3 py-2"><a href="#">ABOUT US</a></li>
+                <li class="item-nav px-3 py-2"><a href="#">SERVICE</a></li>
+                <li class="item-nav px-3 py-2"><a href="#">PORTFOLIO</a></li>
+                <li class="item-nav px-3 py-2"><a href="#">BLOG</a></li>
+                <li class="item-nav px-3 py-2"><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+
         <div id="content">
             <div id="header-img" class="d-md-flex justify-content-sm-center">
                 <div id="carouselExampleIndicators" class="carousel slide">
@@ -107,93 +122,121 @@
                 <div class="col">
                     <div class="card bg-transparent border-0">
                         <div class="card-body">
-                            <div class="card-title d-sm-flex gap-sm-4">
-                                <img src="./image/icon/Ellipse 1.png" alt="" />
-                                <span>Clean Theme</span>
+                            <div class="card-top">
+                                <div class="card-title d-sm-flex gap-sm-4">
+                                    <img
+                                        src="./image/icon/Ellipse 1.png"
+                                        alt=""
+                                    />
+                                    <span>Clean Theme</span>
+                                </div>
+                                <p class="card-text">
+                                    Ut nec lorem id orci convallis porta. Donec
+                                    pharetra neque eu velit dictum molestie.
+                                    Duis porta gravida augue sed viverra.
+                                    Quisque at nulla leo, non aliquet mi.
+                                </p>
                             </div>
-                            <p class="card-text">
-                                Ut nec lorem id orci convallis porta. Donec
-                                pharetra neque eu velit dictum molestie. Duis
-                                porta gravida augue sed viverra. Quisque at
-                                nulla leo, non aliquet mi.
-                            </p>
-                            <a
-                                href="#"
-                                class="d-sm-flex align-items-sm-center gap-sm-2 text-decoration-none"
-                            >
-                                <i class="fa-solid fa-chevron-right"></i>
-                                <span>Read More</span>
-                            </a>
+                            <div class="card-bottom">
+                                <a
+                                    href="#"
+                                    class="d-sm-flex align-items-sm-center gap-sm-2 text-decoration-none"
+                                >
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <span>Read More</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card bg-transparent border-0">
                         <div class="card-body">
-                            <div class="card-title d-sm-flex gap-sm-4">
-                                <img src="./image/icon/Ellipse 2.png" alt="" />
-                                <span>Responsive Design</span>
+                            <div class="card-top">
+                                <div class="card-title d-sm-flex gap-sm-4">
+                                    <img
+                                        src="./image/icon/Ellipse 2.png"
+                                        alt=""
+                                    />
+                                    <span>Responsive Design</span>
+                                </div>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Morbi euismod placerat dui
+                                    et tincidunt. Sed sollicitudin posuere
+                                    auctor. Phasellus at ultricies nisl. Integer
+                                    at leo eros.
+                                </p>
                             </div>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Morbi euismod placerat dui et
-                                tincidunt. Sed sollicitudin posuere auctor.
-                                Phasellus at ultricies nisl. Integer at leo
-                                eros.
-                            </p>
-                            <a
-                                href="#"
-                                class="d-sm-flex align-items-sm-center gap-sm-2 text-decoration-none"
-                            >
-                                <i class="fa-solid fa-chevron-right"></i>
-                                <span>Read More</span>
-                            </a>
+                            <div class="card-bottom">
+                                <a
+                                    href="#"
+                                    class="d-sm-flex align-items-sm-center gap-sm-2 text-decoration-none"
+                                >
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <span>Read More</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card bg-transparent border-0">
                         <div class="card-body">
-                            <div class="card-title d-sm-flex gap-sm-4">
-                                <img src="./image/icon/Ellipse 3.png" alt="" />
-                                <span>Fully layerd PSD </span>
+                            <div class="card-top">
+                                <div class="card-title d-sm-flex gap-sm-4">
+                                    <img
+                                        src="./image/icon/Ellipse 3.png"
+                                        alt=""
+                                    />
+                                    <span>Fully layerd PSD </span>
+                                </div>
+                                <p class="card-text">
+                                    Phasellus lobortis metus non augue sodales
+                                    volutpat. Vestibulum sit amet nibh eros,
+                                    hendrerit venenatis est. In vitae nulla nec
+                                    purus cursus pretium sed id magna.
+                                </p>
                             </div>
-                            <p class="card-text">
-                                Phasellus lobortis metus non augue sodales
-                                volutpat. Vestibulum sit amet nibh eros,
-                                hendrerit venenatis est. In vitae nulla nec
-                                purus cursus pretium sed id magna.
-                            </p>
-                            <a
-                                href="#"
-                                class="d-sm-flex align-items-sm-center gap-sm-2 text-decoration-none"
-                            >
-                                <i class="fa-solid fa-chevron-right"></i>
-                                <span>Read More</span>
-                            </a>
+                            <div class="card-bottom">
+                                <a
+                                    href="#"
+                                    class="d-sm-flex align-items-sm-center gap-sm-2 text-decoration-none"
+                                >
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <span>Read More</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card bg-transparent border-0">
                         <div class="card-body">
-                            <div class="card-title d-sm-flex gap-sm-4">
-                                <img src="./image/icon/Ellipse 4.png" alt="" />
-                                <span>Ready for coding</span>
+                            <div class="card-top">
+                                <div class="card-title d-sm-flex gap-sm-4">
+                                    <img
+                                        src="./image/icon/Ellipse 4.png"
+                                        alt=""
+                                    />
+                                    <span>Ready for coding</span>
+                                </div>
+                                <p class="card-text">
+                                    Vivamus convallis feugiat mauris sed
+                                    posuere. Nam rutrum, quam quis euismod
+                                    commodo, elit est porta quam, non placerat
+                                    eros neque porta ante. Fusce quis odio urna.
+                                </p>
                             </div>
-                            <p class="card-text">
-                                Vivamus convallis feugiat mauris sed posuere.
-                                Nam rutrum, quam quis euismod commodo, elit est
-                                porta quam, non placerat eros neque porta ante.
-                                Fusce quis odio urna.
-                            </p>
-                            <a
-                                href="#"
-                                class="d-sm-flex align-items-sm-center gap-sm-2 text-decoration-none"
-                            >
-                                <i class="fa-solid fa-chevron-right"></i>
-                                <span>Read More</span>
-                            </a>
+                            <div class="card-bottom">
+                                <a
+                                    href="#"
+                                    class="d-sm-flex align-items-sm-center gap-sm-2 text-decoration-none"
+                                >
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <span>Read More</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -233,7 +276,7 @@
                     <hr />
                 </div>
             </div>
-            <div class="row testi_clients">
+            <div class="row row-cols-sm-1 row-cols-md-2 testi_clients">
                 <div id="testimonials" class="col">
                     <div class="header-section">
                         <div class="title-section py-3">
@@ -324,16 +367,16 @@
             </div>
             <div
                 id="bottom-box"
-                class="d-sm-flex gap-sm-2 gap-md-4 gap-lg-6 my-sm-5"
+                class="d-sm-flex gap-sm-2 gap-md-4 gap-lg-6 my-sm-5 row row-cols-sm-1 row-cols-md-2"
             >
-                <p>
+                <p class="col">
                     This is a clean and modern, four column website PSD
                     template. You can code it into a Wordpress website, HTML5
                     responsive website for your personal or client works. So
                     ahead and download this wonderful PSD template!
                 </p>
                 <button
-                    class="download-btn d-md-flex flex-sm-row p-2 align-items-center d-sm-flex"
+                    class="download-btn d-md-flex flex-sm-row p-2 align-items-center d-sm-flex col"
                 >
                     <a href="#">
                         <img
@@ -345,110 +388,123 @@
                     >
                 </button>
             </div>
-        </div>
-        <footer class="py-sm-5">
-            <div class="row row-cols-sm-1 row-cols-xl-3 mb-lg-4">
-                <div class="col">
-                    <div class="title-section mb-lg-2">About us</div>
-                    <div class="content-section">
+            <footer class="py-sm-5">
+                <div
+                    class="row row-cols-sm-1 row-cols-l-2 row-cols-xl-3 mb-lg-4"
+                >
+                    <div class="col about">
+                        <div class="title-section mb-lg-2">About us</div>
+                        <div class="content-section">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Morbi euismod placerat dui et
+                                tincidunt. Sed sollicitudin posuere auctor.
+                                Phasellus at ultricies nisl. Integer at leo
+                                eros. Ut nec lorem id orci convallis porta.
+                                Donec pharetra neque eu velit dictum molestie.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col nav">
+                        <div class="row row-cols-sm-1 row-cols-xl-3">
+                            <div class="col explore">
+                                <div class="title-section mb-lg-2">Explore</div>
+                                <div
+                                    class="content-section d-xl-flex flex-xl-column"
+                                >
+                                    <p><a href="#">Home</a></p>
+                                    <p><a href="#">About</a></p>
+                                    <p><a href="#">Services</a></p>
+                                    <p><a href="#">Portfolio</a></p>
+                                    <p><a href="#">Blog</a></p>
+                                </div>
+                            </div>
+                            <div class="col browser">
+                                <div class="title-section mb-lg-2">Browse</div>
+                                <div
+                                    class="content-section d-xl-flex flex-xl-column"
+                                >
+                                    <p><a href="#">Careers</a></p>
+                                    <p><a href="#">Press & Media</a></p>
+                                    <p><a href="#">Contact Us</a></p>
+                                    <p><a href="#">Terms of Service</a></p>
+                                    <p><a href="#">Privacy Policy</a></p>
+                                </div>
+                            </div>
+                            <div class="col contact">
+                                <div class="title-section mb-lg-2">
+                                    Contact Us
+                                </div>
+                                <div class="content-section">
+                                    <p><strong>BisLite Inc.</strong></p>
+                                    <p>Always Street 265</p>
+                                    <p>0X - 125 - Canada</p>
+                                    <br />
+                                    <p>Phone: 987-6543-210</p>
+                                    <p>Fax: 987-6543-210</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col connect">
+                        <div class="title-section mb-lg-2">Connect with us</div>
+                        <div class="content-section row row-cols-sm-3">
+                            <div class="col align-items-center d-sm-flex p-0">
+                                <img
+                                    src="/image/social/facebook.png"
+                                    alt="social"
+                                />
+                            </div>
+                            <div class="col align-items-center d-sm-flex p-0">
+                                <img
+                                    src="/image/social/dribbble.png"
+                                    alt="social"
+                                />
+                            </div>
+                            <div class="col align-items-center d-sm-flex p-0">
+                                <img
+                                    src="/image/social/pinterest.png"
+                                    alt="social"
+                                />
+                            </div>
+                            <div class="col align-items-center d-sm-flex p-0">
+                                <img
+                                    src="/image/social/linkedin.png"
+                                    alt="social"
+                                />
+                            </div>
+                            <div class="col align-items-center d-sm-flex p-0">
+                                <img
+                                    src="/image/social/skype.png"
+                                    alt="social"
+                                />
+                            </div>
+                            <div class="col align-items-center d-sm-flex p-0">
+                                <img
+                                    src="/image/social/share.png"
+                                    alt="social"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="d-md-flex justify-content-md-between align-items-md-center"
+                >
+                    <div>
+                        <p>© Copyright 2021. All rights reserved.</p>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Morbi euismod placerat dui et tincidunt. Sed
-                            sollicitudin posuere auctor. Phasellus at ultricies
-                            nisl. Integer at leo eros. Ut nec lorem id orci
-                            convallis porta. Donec pharetra neque eu velit
-                            dictum molestie.
+                            elit.
                         </p>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="row row-cols-sm-1 row-cols-xl-3">
-                        <div class="col">
-                            <div class="title-section">Explore</div>
-                            <div
-                                class="content-section d-xl-flex flex-xl-column"
-                            >
-                                <a href="#">Home</a>
-                                <a href="#">About</a>
-                                <a href="#">Services</a>
-                                <a href="#">Portfolio</a>
-                                <a href="#">Blog</a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="title-section">Browse</div>
-                            <div
-                                class="content-section d-xl-flex flex-xl-column"
-                            >
-                                <a href="#">Careers</a>
-                                <a href="#">Press & Media</a>
-                                <a href="#">Contact Us</a>
-                                <a href="#">Terms of Service</a>
-                                <a href="#">Privacy Policy</a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="title-section">Contact Us</div>
-                            <div class="content-section">
-                                <strong>BisLite Inc.</strong>
-                                <p>Always Street 265</p>
-                                <p>0X - 125 - Canada</p>
-                                <p>Phone: 987-6543-210</p>
-                                <p>Fax: 987-6543-210</p>
-                            </div>
-                        </div>
+                    <div class="logo">
+                        <img src="/image/logo/BisLite.png" alt="logo" />
                     </div>
                 </div>
-                <div class="col">
-                    <div class="title-section mb-lg-2">Connect with us</div>
-                    <div class="content-section row row-cols-sm-3">
-                        <div class="col align-items-center d-sm-flex">
-                            <img
-                                src="/image/social/facebook.png"
-                                alt="social"
-                            />
-                        </div>
-                        <div class="col align-items-center d-sm-flex">
-                            <img
-                                src="/image/social/dribbble.png"
-                                alt="social"
-                            />
-                        </div>
-                        <div class="col align-items-center d-sm-flex">
-                            <img
-                                src="/image/social/pinterest.png"
-                                alt="social"
-                            />
-                        </div>
-                        <div class="col align-items-center d-sm-flex">
-                            <img
-                                src="/image/social/linkedin.png"
-                                alt="social"
-                            />
-                        </div>
-                        <div class="col align-items-center d-sm-flex">
-                            <img src="/image/social/skype.png" alt="social" />
-                        </div>
-                        <div class="col align-items-center d-sm-flex">
-                            <img src="/image/social/share.png" alt="social" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="d-md-flex justify-content-md-between align-items-md-center"
-            >
-                <div>
-                    <p>© Copyright 2021. All rights reserved.</p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                </div>
-                <div class="logo">
-                    <img src="/image/logo/BisLite.png" alt="logo" />
-                </div>
-            </div>
-        </footer>
+            </footer>
+        </div>
         <script src="/vendor/bootstrap/js/bootstrap.js"></script>
+        <script src="./js/script.js"></script>
     </body>
 </html>
