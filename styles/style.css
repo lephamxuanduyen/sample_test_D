@@ -187,8 +187,7 @@ li.item-nav:hover a, .item-nav.active a {
 #bottom-box {
     background-color: var(--light-blue-300);
     border: solid var(--blue-border);
-    margin-left: 200px;
-    margin-right: 200px;
+    margin: 2rem 200px;
     padding: 2rem;
 }
 
@@ -247,15 +246,15 @@ footer .col.nav p, footer p{
 }
 
 header.navbar, #middle-section, #lasted-works, .testi_clients, footer {
-    padding-left: 200px;
-    padding-right: 200px;
-    margin: 0;
+    padding: 0 200px;
+    /* margin: 0; */
+    width: 100%
 }
 
 @media only screen and (max-width: 1440px) {
     header.navbar, #middle-section, #lasted-works, .testi_clients, footer {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding: 0 10%;
+        /* margin: 0; */
     }
 
     #header-img .carousel {
@@ -264,8 +263,7 @@ header.navbar, #middle-section, #lasted-works, .testi_clients, footer {
     }
 
     #bottom-box {
-        margin-left: 10%;
-        margin-right: 10%;
+        margin: 2rem 10%
     }
 }
 
@@ -294,6 +292,7 @@ header.navbar, #middle-section, #lasted-works, .testi_clients, footer {
 @media only screen and (max-width: 720px) {
     footer .col.about, footer .col.nav, footer .col.connect, #clients, #testimonials {
         width: 100%;
+        padding: 1rem;
     }
 
     footer .col.nav {
@@ -319,6 +318,7 @@ header.navbar, #middle-section, #lasted-works, .testi_clients, footer {
 
     footer > div {
         flex-direction: column;
+        padding: 1rem;
     }
 
     .testi_clients {
